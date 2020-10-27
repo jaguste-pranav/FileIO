@@ -9,6 +9,13 @@ namespace FileIODemo
         {
             Console.WriteLine("Welcome to File I/O Operation");
             FileExits();
+            ReadAllLines();
+            Console.Write("\n\n");
+            ReadAllText();
+
+            ReadFromStreamReader();
+            WriteUsingStreamWriter();
+            ReadFromStreamReader();
         }
         public static void FileExits()
         {
@@ -53,7 +60,7 @@ namespace FileIODemo
                 File.Delete(newPath);
             }
         }
-        public void ReadFromStreamReader()
+        public static void ReadFromStreamReader()
         {
             string path = @"C:\Users\Pranav V Jaguste\source\repos\FileIO\FileIO\Sample.txt";
             using (StreamReader sr = File.OpenText(path))
@@ -65,7 +72,7 @@ namespace FileIODemo
                 }
             }
         }
-        public void WriteUsingStreamWriter()
+        public static void WriteUsingStreamWriter()
         {
             string path = @"C:\Users\Pranav V Jaguste\source\repos\FileIO\FileIO\Sample.txt";
             using (StreamWriter sr = File.AppendText(path))
