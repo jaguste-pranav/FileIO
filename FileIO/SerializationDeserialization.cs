@@ -63,24 +63,4 @@ namespace FileIODemo
         }
 
     }
-    [Serializable]
-    public class Demo
-    {
-
-        public string ApplicationName { get; set; }
-        public int ApplicationId { get; set; } = 1001;
-    }
-    [DataContract]
-    public class BlogSites
-    {
-        [DataMember]
-        public string Name { get; set; }
-
-        [DataMember]
-        public string Description { get; set; }
-    }
-    public class OrderForm
-    {
-        public DateTime OrderDate;
-    }
 }

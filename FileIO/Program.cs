@@ -7,14 +7,12 @@ namespace FileIODemo
     {
         static void Main(string[] args)
         {
-            int index = 6;
-            int[] array = new int[5];
-            array[index] = 3;
             Console.WriteLine("Welcome to File I/O Operation");
+            FileExits();
         }
         public static void FileExits()
         {
-            string path = @"C:\Users\Gharat\source\repos\Sample\sample.txt";
+            string path = @"C:\Users\Pranav V Jaguste\source\repos\FileIO\FileIO\Sample.txt";
             if (File.Exists(path))
             {
                 Console.WriteLine("File Exists");
@@ -26,7 +24,7 @@ namespace FileIODemo
         }
         public static void ReadAllLines()
         {
-            string path = @"C:\Users\Gharat\source\repos\Sample\sample.txt";
+            string path = @"C:\Users\Pranav V Jaguste\source\repos\FileIO\FileIO\Sample.txt";
             string[] lines;
             lines = File.ReadAllLines(path);
 
